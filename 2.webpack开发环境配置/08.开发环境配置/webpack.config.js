@@ -66,6 +66,16 @@ module.exports = {
     contentBase: resolve(__dirname, 'build'),
     compress: true,
     port: 3000,
-    open: true
+    open: true,
+    proxy:{
+      '/Yixiantong':{
+         target:'http://study.jsplusplus.com/',
+         secure:false,
+         changeOrigin:true,
+         pathRewrite:{
+           '/api':''
+         }
+      }
+    }
   }
 };
