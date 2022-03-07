@@ -33,7 +33,8 @@ module.exports = {
           // 给图片进行重命名
           // [hash:10]取图片的hash的前10位
           // [ext]取文件原来扩展名
-          name: '[hash:10].[ext]'
+          name: '[hash:10].[ext]',
+          outputPath:'设置导出的文件路径'
         }
       },
       {
