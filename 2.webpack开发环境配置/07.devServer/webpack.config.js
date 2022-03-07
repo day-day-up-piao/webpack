@@ -30,6 +30,8 @@ module.exports = {
     })
   ],
   mode: 'development',
+  
+  devtool:'eval-source-map',
 
   // 开发服务器 devServer：用来自动化（自动编译，自动打开浏览器，自动刷新浏览器~~）
   // 特点：只会在内存中编译打包，不会有任何输出
